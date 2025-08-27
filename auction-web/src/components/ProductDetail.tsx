@@ -5,8 +5,7 @@ import {
   Clock, 
   Users, 
   Minus, 
-  Plus, 
-  DollarSign, 
+  Plus,  
   Menu,
   Award,
   Search,
@@ -41,10 +40,10 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
   const [showPaymentModal, setShowPaymentModal] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState('card');
   const [showMobileMenu, setShowMobileMenu] = useState(false);        
-  const [quantity, setQuantity] = useState(1);
-  const [cartItems, setCartItems] = useState<string[]>([]);
+  const [_quantity, _setQuantity] = useState(1);
+  const [cartItems, _setCartItems] = useState<string[]>([]);
   
-  const [watchList, setWatchList] = useState<string[]>([]);
+  const [watchList, _setWatchList] = useState<string[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('ending');
 

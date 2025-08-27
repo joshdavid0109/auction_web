@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { DollarSign, Users, Check,  Search, ShoppingCart, User, Menu, Filter, Clock, MapPin, Star, Bell, Heart, Eye, Truck, Shield, Award, X, Plus, Minus, CreditCard, Banknote, Smartphone } from 'lucide-react';
+import {  Search, ShoppingCart, User, Menu, Filter, Clock, MapPin, Star, Bell, Heart, Eye, Truck, Shield, Award } from 'lucide-react';
 import ProductDetail from './ProductDetail';
-import type { AuctionItem, ProductDetailProps } from '../types/types';
+import type { AuctionItem } from '../types/types';
 
 const AuctionWebsite: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState<AuctionItem | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [currentTime, setCurrentTime] = useState(new Date());
-  const [cartItems, setCartItems] = useState<string[]>([]);
+  const [cartItems] = useState<string[]>([]);
   const [watchList, setWatchList] = useState<string[]>([]);
   const [showMobileMenu, setShowMobileMenu] = useState(false);        
   const [sortBy, setSortBy] = useState('ending');    
